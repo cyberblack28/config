@@ -5,7 +5,7 @@ label: giops
 replicas: 3
 image:
   repository: ap-tokyo-1.ocir.io/nrc2rq0xtwas/cyberblack28/gitops-go-app
-  tag: 0
+  tag: 2
 
 imageConfig:
   pullPolicy: IfNotPresent
