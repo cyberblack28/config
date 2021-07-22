@@ -5,10 +5,13 @@ label: gitops
 replicas: 3
 image:
   repository: docker.pkg.github.com/cyberblack28/gitops-go-app
-  tag: 14
+  tag: 16
 
 imageConfig:
   pullPolicy: IfNotPresent
 
+imageSecret:
+  name: dockerconfigjson-github-com
+
 #Service
-service_type: LoadBalancer
+service_type: ClusterIP

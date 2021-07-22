@@ -16,3 +16,5 @@ spec:
       - name: {{ .Chart.Name }}
         image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.imageConfig.pullPolicy }}
+      imagePullSecrets:
+      - name: {{ .Values.imageSecret.name }}
