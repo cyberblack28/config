@@ -5,7 +5,7 @@ label: gitops
 replicas: 3
 image:
   repository: docker.pkg.github.com/cyberblack28/code/gitops-go-app
-  tag: 19
+  tag: 20
 
 imageConfig:
   pullPolicy: IfNotPresent
